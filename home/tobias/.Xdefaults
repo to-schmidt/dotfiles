@@ -1,0 +1,87 @@
+! ~/.Xdefaults
+
+Xmessage.background:          #002b36
+Xmessage.foreground:          #839496
+
+! Molokai theme
+URxvt*background: #001E1E
+URxvt*foreground: #93a1a1
+
+URxvt*font:	xft:SauceCodePro Nerd Font:style=Light,Regular:normal:size=5
+
+! black
+!URxvt*color0:#121112
+!URxvt*color8:#6C6C6C
+! red
+!URxvt*color1:#D7005F
+!URxvt*color9:#D74083
+! green
+!URxvt*color2:#87FF00
+!URxvt*color10:#93FF19
+! yellow
+!URxvt*color3:#FF8700
+!URxvt*color11:#FF9926
+! blue
+!URxvt*color4:#005F87
+!URxvt*color12:#387BAB
+! magenta
+!URxvt*color5:#AF5FFF
+!URxvt*color13:#B973FF
+! cyan
+!URxvt*color6:#81C1C1
+!URxvt*color14:#5FD7FF
+! white
+!URxvt*color7:#AFAF87
+!URxvt*color15:#D0D0D0
+! underline when default
+!URxvt*colorUL: #5FD7FF
+
+URxvt.scrollBar: 	false
+URxvt.depth: 		32
+!URxvt*background: 	rgba:0000/0000/0000/9999
+
+! Make numpad keys behave the same as the corresponding normal keys
+URxvt.keysym.KP_Add:		+
+URxvt.keysym.KP_Subtract:	-
+URxvt.keysym.KP_Multiply:	*
+URxvt.keysym.KP_Divide  :	/
+URxvt.keysym.KP_Decimal :	.
+URxvt.keysym.KP_Separator :	,
+URxvt.keysym.KP_1:     		1
+URxvt.keysym.KP_2:     		2
+URxvt.keysym.KP_3:     		3
+URxvt.keysym.KP_4:      	4
+URxvt.keysym.KP_5:      	5
+URxvt.keysym.KP_6:      	6
+URxvt.keysym.KP_7:      	7
+URxvt.keysym.KP_8:      	8
+URxvt.keysym.KP_9:      	9
+URxvt.keysym.KP_0:      	0
+
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   argb:00000000, #1aa, argb:11FFFFFF, #1aa, #333
+! Color scheme for urgent row
+rofi.color-urgent:                   argb:00000000, #f99, argb:11FFFFFF, #f99, #333
+! Color scheme for active row
+rofi.color-active:                   argb:00000000, #aa1, argb:11FFFFFF, #aa1, #333
+! Color scheme window
+rofi.color-window:                   argb:ee333333, #1aa,#1aa
+! Separator style (none, dash, solid)
+rofi.separator-style:                dash
+
+rofi.bg: #001E1E
+rofi.fg: #93a1a1
+
+rofi.width:    100
+rofi.lines:    10
+rofi.font:     Sauce Code Pro Nerd Font 9
+rofi.location: 2
+rofi.opacity:  100
+rofi.columns:  5

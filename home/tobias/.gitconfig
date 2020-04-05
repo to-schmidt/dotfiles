@@ -1,0 +1,31 @@
+# ~/.gitconfig
+
+[user]
+    email = tobias.schmidt@in.tum.de
+    name  = Tobias Schmidt
+
+[alias]
+    graph = log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
+    commit-count = rev-list HEAD --count
+
+    c  	= commit -v
+    ca 	= commit --amend --no-edit
+    cm  = commit -m
+    a  	= add
+    r  	= remove
+    b  	= branch
+    co 	= checkout
+    cb 	= checkout -b
+    g  	= log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
+    s  	= status -bs
+    d  	= diff
+    psh	= push origin
+    pf  = push --force
+    pll = pull origin
+    fix = commit --fixup HEAD
+    u   = reset HEAD
+    r 	= rebase -i
+
+[core]
+    autocrlf = false
+    editor = vim 

@@ -1,0 +1,27 @@
+#!/bin/sh
+
+touchpadId=`xinput list | grep -i "Synaptics TouchPad" | grep -P -o "id=[0-9]+" | grep -P -o "[0-9]+"`
+touchpadProps=`xinput list-props $touchpadId`
+pattern="Device Enabled \\([0-9]+\\): *1"
+if [[ $touchpadProps == *"Synaptics TouchPad"* ]]
+    then
+    echo $touchpadProps | egrep -qo "$pattern"
+    case $1 in
+        "toggle"*)
+            if [[ $? -eq 0 ]]
+            then
+                xinput disable $touchpadId
+            else
+                xinput enable $touchpadId
+            fi
+            ;;
+        "query"*)
+            if [[ $? -eq 0 ]]
+            then
+                echo "<icon=mouse_01.xbm/> On"
+            else
+                echo "<icon=mouse_01.xbm/> Off"
+            fi
+            ;;
+    esac
+fi
