@@ -3,14 +3,15 @@
 [user]
     email = tobias.schmidt@in.tum.de
     name  = Tobias Schmidt
+	signingkey = 4C7186083D6B6ADE
 
 [alias]
     graph = log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
     commit-count = rev-list HEAD --count
 
-    c  	= commit -v
-    ca 	= commit --amend --no-edit
-    cm  = commit -m
+    c  	= commit -S -v
+    ca 	= commit -S --amend --no-edit
+    cm  = commit -S -m
     a  	= add
     r  	= remove
     b  	= branch
@@ -29,3 +30,6 @@
 [core]
     autocrlf = false
     editor = vim 
+
+[commit]
+    gpgsign = true
