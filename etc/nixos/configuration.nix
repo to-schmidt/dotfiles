@@ -136,6 +136,10 @@
   environment.variables.GIO_EXTRA_MODULES = [ "${pkgs.gvfs}/lib/gio/modules" ];
   services.devmon.enable = true; # automatic device mounting daemon
 
+  # key management
+  services.gnome3.gnome-keyring.enable = true;
+  programs.seahorse.enable = true;
+
   # virtualisation
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;
