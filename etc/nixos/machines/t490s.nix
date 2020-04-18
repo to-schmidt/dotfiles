@@ -7,9 +7,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # make /tmp tmpfs and clean it on every startup
+  # clean /tmp on every startup
   boot.cleanTmpDir = true;
-  boot.tmpOnTmpfs = true;
+  boot.tmpOnTmpfs = false;
 
   # bootup splash screen
   boot.plymouth.enable = true;
