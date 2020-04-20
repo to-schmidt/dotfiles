@@ -2,7 +2,7 @@
   allowUnfree = true;
   packageOverrides = pkgs: rec {
     # Install via
-    #   nix-env -iA development-environment
+    #   nix-env -iA nixos.dev-env
     dev-env = pkgs.buildEnv {
       name = "dev-env";
       paths = with pkgs; [
