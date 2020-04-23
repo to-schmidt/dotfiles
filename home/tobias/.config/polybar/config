@@ -29,7 +29,7 @@ tail = true
 
 [module/xwindow]
 type = internal/xwindow
-label-maxlen = 100
+label-maxlen = 40
 
 [module/backlight]
 type = internal/backlight
