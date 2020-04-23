@@ -3,7 +3,7 @@ eval `dircolors ~/.dircolors/solarized.dark`
 alias git='unset SSH_ASKPASS; git'
 alias g='git'
 alias le='l'
-alias cat='ccat'
+alias cat='cat'
 
 RPROMPT=''
 
