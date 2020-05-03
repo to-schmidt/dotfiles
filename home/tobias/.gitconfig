@@ -9,23 +9,23 @@
     graph = log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
     commit-count = rev-list HEAD --count
 
-    c  	= commit -S -v
-    ca 	= commit -S --amend --no-edit
+    c	= commit -S -v
+    ca	= commit -S --amend
     cm  = commit -S -m
-    a  	= add
-    r  	= remove
-    b  	= branch
-    co 	= checkout
-    cb 	= checkout -b
-    g  	= log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
-    s  	= status -bs
-    d  	= diff
+    a	= add
+    r	= remove
+    b	= branch
+    co	= checkout
+    cb	= checkout -b
+    g	= log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
+    s	= status -bs
+    d	= diff
     psh	= push origin
     pf  = push --force
     pll = pull origin
     fix = commit --fixup HEAD
     u   = reset HEAD
-    r 	= rebase -i
+    r	= rebase -i
 
 [core]
     autocrlf = false
