@@ -8,6 +8,8 @@
       paths = with pkgs; [
         gcc
         cmake
+        gnumake
+        clang-tools
         gdb
         valgrind
         linuxPackages.perf
