@@ -38,7 +38,6 @@
     zsh
     terminator
 
-    firefox
     thunderbird
     chromium
     discord
